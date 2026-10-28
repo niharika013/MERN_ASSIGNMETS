@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coding Club registration page">
+
+    <title>Niharika's Coding Club</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#events">Events</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <h1>Niharika's Coding Club</h1>
+
+    <h2 id="events">Upcoming Events</h2>
+
+    <table border="1">
+        <caption>Club Events</caption>
+
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML Workshop</td>
+                <td>12 Nov</td>
+                <td>Lab 1</td>
+            </tr>
+
+            <tr>
+                <td>Hackathon</td>
+                <td>20 Nov</td>
+                <td>Seminar Hall</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total events: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2 id="register">Register for the Coding Club</h2>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="pass" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <p>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter phone number">
+        </p>
+
+        <p>
+            Gender:<br>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </p>
+
+        <p>
+            Skills:<br>
+
+            <input type="checkbox" id="web" name="skills" value="Web">
+            <label for="web">Web Development</label><br>
+
+            <input type="checkbox" id="dsa" name="skills" value="DSA">
+            <label for="dsa">DSA</label>
+        </p>
+
+        <p>
+            <label for="branch">Branch:</label><br>
+
+            <select id="branch" name="branch">
+                <option value="BCA">BCA</option>
+                <option value="BTech">B.Tech</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="msg">Why do you want to join?</label><br>
+
+            <textarea id="msg" name="msg" rows="3" cols="30"
+                      placeholder="Write your answer here"></textarea>
+        </p>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
